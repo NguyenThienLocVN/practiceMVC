@@ -1,15 +1,15 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home_model extends CI_Model {
+class Product_model extends CI_Model {
     public function __construct()
     {
         $this->load->database();
     }
     
-    // Function to get image data
-    public function get_images()
+    // Function to query data
+    public function get_product()
     {
-        $query = $this->db->get('images');
+        $query = $this->db->query('select * from product');
         if($query->num_rows() > 0){
             $result = $query->result_array();
             return $result;
