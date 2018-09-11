@@ -7,7 +7,7 @@ class ProductModel extends CI_Model {
     }
     
     // Function to query data
-    public function get_product()
+    public function getProduct()
     {
         $query = $this->db->query('select * from product');
         if($query->num_rows() > 0){

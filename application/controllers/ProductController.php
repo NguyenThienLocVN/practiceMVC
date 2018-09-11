@@ -12,7 +12,7 @@ class ProductController extends CI_Controller {
     public function index()
     {
         //Get data from the database
-        $data['product'] = $this->ProductModel->get_product();
+        $data['product'] = $this->ProductModel->getProduct();
         
         //Load view
         $this->load->view('ProductView', $data);
