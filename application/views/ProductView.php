@@ -24,6 +24,7 @@
                 <td><?php echo $val['amount']; } ?></td>
             </tr>
         </table>
+        <p>Page rendered in <strong>{elapsed_time}</strong> seconds.
 </div>
 
 </body>
